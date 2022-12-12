@@ -12,9 +12,16 @@ public class LoginTests extends Basetest{
         Assert.assertTrue(productsPage.isShoppingCartButtonPresent());
     }
     @Test
-    public void negativeLoginTest(){
+    public void negativeLoginTestUser(){
         loginPage.setUsername("standard_user");
         loginPage.setPassword("12345678");
+        loginPage.clickLoginButton();
+        Assert.assertTrue(loginPage.isErrorMessageContainerPresent());
+    }
+    @Test
+    public void negativeLoginTestPassword(){
+        loginPage.setUsername("Alexey");
+        loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
         Assert.assertTrue(loginPage.isErrorMessageContainerPresent());
     }
