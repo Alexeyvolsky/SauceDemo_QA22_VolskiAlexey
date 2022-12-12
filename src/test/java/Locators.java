@@ -1,3 +1,5 @@
+public class Locators {
+}
 //        //XPath
 //        By.xpath("//div[@class='login_logo']"); //Поиск по атрибуту на странице https://www.saucedemo.com/
 //        By.xpath("//*[contains(text(),='Swag Labs')]"); //Поиск по тексту на странице https://www.saucedemo.com/

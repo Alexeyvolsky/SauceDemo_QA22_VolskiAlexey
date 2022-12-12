@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class SaucedemoTest {
+public class SauceDemo {
     WebDriver driver;
     @Test
     public void sauceDemo(){
